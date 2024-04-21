@@ -1,0 +1,93 @@
+*{
+   
+}
+
+body{
+    background-color: #036e6e;
+}
+h1{
+  padding: 10px;
+  color:#002E2E
+}
+#headernav{
+    background-color: #002F2F;
+}
+.navbar-custom {
+    background-color: #002F2F;
+}
+.navbar-text
+{
+    color: #0af891;
+}
+.container{
+    background-color:#004848;
+}
+nav{
+    margin-bottom: 10px;
+}
+section{
+    background-color: #009999;
+    width: 100%;
+}
+p{
+    padding: 10px;
+    color:#002E2E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+.homepageshirts{
+    
+}
+.pricingclass{
+    
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+footer{
+    padding: 15px;
+    text-align: center;
+    color: #0af891;
+    background-color: #001a06;
+    height: 200px;
+    }
+    
+    footer li{
+        display: inline;
+        padding-right: 40px;
+        list-style-type: none;
+    }
+    footer a:link{
+        color:#0af891;
+        text-decoration:underline;
+    }
+    footer a:visited{
+        color: #0af891; 
+        text-decoration: underline;
+    }
+    footer a:hover{
+        text-decoration: underline;
+        color: #02633b;
+    }
+    .storeitem {
+        margin: 10px 2.5px 0px 2.5px;
+        padding: 10px;
+        background-color: white;
+        
+
+    }
+    .storeitem p{
+        color:red;
+        font-size: 12pt;
+        text-align: center;
+    }
+    .storeitem a:link{
+        color: black;
+    }
+    .storeitem a:visited{
+        color: black;
+    }
+    .storeitem a:hover{
+        color: gray;
+    }
+
+    
