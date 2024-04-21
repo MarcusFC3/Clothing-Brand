@@ -28,6 +28,7 @@ nav{
 section{
     background-color: #009999;
     width: 100%;
+    margin-top: 10px;
 }
 p{
     padding: 10px;
@@ -68,6 +69,7 @@ footer{
         text-decoration: underline;
         color: #02633b;
     }
+
     .storeitem {
         margin: 10px 2.5px 0px 2.5px;
         padding: 10px;
@@ -78,7 +80,7 @@ footer{
     .storeitem p{
         color:red;
         font-size: 12pt;
-        text-align: center;
+        
     }
     .storeitem a:link{
         color: black;
@@ -89,5 +91,20 @@ footer{
     .storeitem a:hover{
         color: gray;
     }
-
+    #aboutus-img{
+        background-image: url("../img/Wooten.jpg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24pt;
+       color: white;
+       max-height: 400px;
+       min-width: 100%;
+       
+        
+    }
+  
     
