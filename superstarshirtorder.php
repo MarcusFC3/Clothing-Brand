@@ -46,9 +46,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link navbar-text" href="aboutus.html">About Us</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link navbar-text" href="login.html">Account</a>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -58,70 +55,33 @@
 
         <div class="row">
             <div class="col-12">
+                yes
             </div>
         </div>
 
         <div class="row">
-            <!-- 
-                How to make a store item
+            
+            <?php
+                $SeverName = "DESKTOP-MO11PEJ\SQLEXPRESS01";
+                $connectionOptions =[
+                    "Database" =>"StorePractice",
+                    "Uid"=>"",
+                    "PWD"=>""
+                ];
+                $conn = sqlsrv_connect($serverName,$connectionInfo);
+                if($conn){
+                    echo "Connection Successful";
+                }else{
+                    echo "Connection Failed";
+                }
+                $sql = "INSERT INTO Orders VALUES(1,1)";
+                $stmt = sqlsrv_query($conn, $sql);
+                if ($stmt){
+                    echo "It Worked!";
+                }
+            ?>
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <a href="link to shirt"
-                    <div class="storeitem">
-                        <img class="img-fluid" href="index.html" src="ImageSource" alt="Image Name">
-                        <p>
-                            <a href="index.html">Image Name</a>
-                            <br>
-                            Price
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <a href="index.html">
-                    <div class="storeitem">
-                        <img class="img-fluid" href="index.html" src="img/superstartbutterflytshirt.jpg" alt="">
-                            <p>
-                                <a href="index.html">Superstar T-shirt</a>
-                              <br>
-                                $40.99
-                            </p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="storeitem">
-                    <img class="img-fluid" href="orderform.html" src="img/superstartbutterflytshirt.jpg" alt="">
-                    <p>
-                        <a href="orderform.html">Superstar T-shirt</a>
-                       <br>
-                        $40.99
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="storeitem">
-                    <img class="img-fluid" href="index.html" src="img/superstartbutterflytshirt.jpg" alt="">
-                    <p>
-                        <a href="superstarshirtorderform.html">Superstar T-shirt</a>
-                        <br>
-                        $40.99
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="storeitem">
-                    <img class="img-fluid" href="index.html" src="img/superstartbutterflytshirt.jpg" alt="">
-                    <p>
-                        <a href="orderform.html">Superstar T-shirt</a>
-                       <br>
-                        $40.99
-                    </p>
-                </div>
-            </div>
-            <span class="bottom-margin-10"></span>
+           
         </div>
         <div class="row">
 

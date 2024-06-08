@@ -1,110 +1,192 @@
-*{
-   
-}
+* {}
 
-body{
+body {
     background-color: #036e6e;
 }
-h1{
-  padding: 10px;
-  color:#002E2E
+
+h1 {
+    padding: 10px;
+    color: #002E2E
 }
-#headernav{
+
+#headernav {
     background-color: #002F2F;
 }
+
 .navbar-custom {
     background-color: #002F2F;
 }
-.navbar-text
-{
+
+.navbar-text {
     color: #0af891;
 }
-.container{
-    background-color:#004848;
+
+.container {
+    background-color: #004848;
 }
-nav{
+
+nav {
     margin-bottom: 10px;
 }
-section{
+
+section {
     background-color: #009999;
     width: 100%;
     margin-top: 10px;
 }
-p{
+
+p {
     padding: 10px;
-    color:#002E2E;
+    color: #002E2E;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14pt;
 }
-.homepageshirts{
+
+
+.pricingclass {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+form{
     
 }
-.pricingclass{
-    
- margin-top: 10px;
- margin-bottom: 10px;
+.loginsignup {
+    display: block;
+    text-align: center;
+    height: 60vh;
 }
-footer{
+.vertical-center{
+    position:relative;
+    -ms-transform: translateY(-50%);
+    transform:translateY(-50%);
+    top: 50%;
+}
+
+.loginsignup p{
+    position: relative;
+    transform: translateY(45%);
+}
+
+.loginsignup input[type=text] {
+    width: 320px;
+    border-style:ridge;
+    border-radius: 0.8em;
+}
+.loginsignup input[type=checkbox] {
+    margin-left: 15px;
+    position: relative;
+    transform:translateY(12%);
+}
+.loginsignup a:link{
+    color: #0af891;
+    text-decoration: underline;
+}
+.loginsignup a:visited{
+    color: #0af891;
+    text-decoration: underline;
+}
+.loginsignup a:hover {
+    text-decoration: underline;
+    color: #02633b;
+}
+footer {
     padding: 15px;
     text-align: center;
     color: #0af891;
     background-color: #001a06;
     height: 200px;
-    }
-    
-    footer li{
-        display: inline;
-        padding-right: 40px;
-        list-style-type: none;
-    }
-    footer a:link{
-        color:#0af891;
-        text-decoration:underline;
-    }
-    footer a:visited{
-        color: #0af891; 
-        text-decoration: underline;
-    }
-    footer a:hover{
-        text-decoration: underline;
-        color: #02633b;
+}
+
+footer li {
+    display: inline;
+    padding-right: 40px;
+    list-style-type: none;
+}
+
+footer a:link {
+    color: #0af891;
+    text-decoration: underline;
+}
+
+footer a:visited {
+    color: #0af891;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #02633b;
+}
+
+.top-margin-10 {
+    margin-top: 10px;
+}
+
+.bottom-margin-10 {
+    margin-bottom: 10px;
+}
+@keyframes storeitemselected {
+    0% {
+        transform: scale(1.0);
     }
 
-    .storeitem {
-        margin: 10px 2.5px 0px 2.5px;
-        padding: 10px;
-        background-color: white;
-        
+    100% {
+        transform: scale(1.03);
+    }
+}
 
-    }
-    .storeitem p{
-        color:red;
-        font-size: 12pt;
-        
-    }
-    .storeitem a:link{
-        color: black;
-    }
-    .storeitem a:visited{
-        color: black;
-    }
-    .storeitem a:hover{
-        color: gray;
-    }
-    #aboutus-img{
-        background-image: url("../img/Wooten.jpg");
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100vh;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 24pt;
-       color: white;
-       max-height: 400px;
-       min-width: 100%;
-       
-        
-    }
-  
-    
+.storeitem {
+    margin: 10px 0px 0px 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 0px;
+    background-color: #001B1B;
+    border-style: solid;
+    border-color: #001B1B;
+    border-radius: 0.5em;
+}
+
+.storeitem:hover {
+    animation-name: storeitemselected;
+    animation-duration: 1.5s;
+}
+
+.storeitem p {
+    color: #0af891;
+    font-size: 12pt;
+    text-align: center;
+}
+
+.storeitem a:link {
+    text-align: center;
+    color: #0af891;
+}
+
+.storeitem a:visited {
+    text-align: center;
+    color: #0af891;
+}
+
+.storeitem a:hover {
+    text-align: center;
+    color: #02633b;
+}
+
+#aboutus-img {
+    background-image: url("../img/Wooten.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24pt;
+    color: white;
+    max-height: 400px;
+    min-width: 100%;
+}
